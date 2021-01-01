@@ -13,12 +13,6 @@ Lambda: 4574
 Kinesis: 4568
 
 docker-compose -f docker-compose.yml up -d localstack
-git add --all && git commit -m 'commit message' && git push
-
-terraform init
-terraform refresh
-terraform plan
-terraform apply
 
 aws dynamodb list-tables --endpoint-url=http://localhost:4569
 
