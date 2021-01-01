@@ -10,6 +10,6 @@ public class Main implements RequestHandler<String, String> {
     public String handleRequest(String inputParam, Context context) {
         LambdaLogger logger = context.getLogger();
         logger.log(inputParam);
-        return "Hello!";
+        return "Hello from lambda !!!";
     }
 }
